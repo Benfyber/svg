@@ -1,0 +1,296 @@
+:root {
+    --blue: #9ae2e7;
+    --orange: #fa9f57;
+    --pink: #f99287;
+    --dark: #202d34;
+}
+
+.wrap {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin: 1rem;
+}
+
+svg {
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+
+/* box1 (1,3)*/
+#lgc {
+    animation: 10s inUp infinite normal;
+    animation-delay: .5s;
+}
+
+#smc {
+    animation: 10s inUp infinite normal;
+}
+
+#circ {
+    animation: 10s rotateCirc infinite normal;
+    transform-origin: 50% 25%;
+}
+
+#lgc1 {
+    animation: 10s indown infinite normal;
+    animation-delay: .5s;
+}
+
+#smc1 {
+    animation: 10s indown infinite normal;
+}
+
+#circ1 {
+    animation: 10s rotateCirc1 infinite normal;
+    transform-origin: 25% 75%;
+}
+
+@keyframes inUp {
+    0% {
+        transform: translate(0px, 200px);
+    }
+
+    10% {
+        transform: translate(0, 0px);
+    }
+
+    40% {
+        transform: translate(0, 0px);
+    }
+
+    45% {
+        transform: translate(0px, 200px);
+    }
+
+    100% {
+        transform: translate(0px, 200px);
+    }
+}
+
+@keyframes indown {
+    0% {
+        transform: translate(200px, 0px);
+    }
+
+    50% {
+        transform: translate(200px, 0px);
+    }
+
+    55% {
+        transform: translate(0, 0);
+    }
+    
+    95% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(200px, 0px);
+    }
+}
+
+@keyframes rotateCirc {
+    0% {
+        transform: scaleY(0);
+    }
+
+    5% {
+        transform: scaleY(1);
+    }
+
+    40% {
+        transform: scaleY(1);
+    }
+
+    45% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes rotateCirc1 {
+    0% {
+        transform: scaleY(0);
+    }
+
+    50% {
+        transform: scaleY(0);
+    }
+
+    55% {
+        transform: scaleY(1);
+    }
+
+    95% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+}
+
+/* box2 (2,3)*/
+#right-curve {
+    fill: var(--blue);
+    animation: 10s slideIn infinite normal;
+}
+
+#right-curve-bottom {
+    fill: var(--pink);
+    animation: 10s slideInBottom infinite normal;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-200px);
+    }
+    10% {
+        transform: translateY(000px);
+    }
+
+    45% {
+        transform: translateY(000px);
+    }
+    55%{
+        transform:translateX(300px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(200px);
+    }
+    10% {
+        transform: translateY(000px);
+    }
+    45% {
+        transform: translateY(000px);
+    }
+    55%{
+        transform:translateX(300px);
+    }
+    100%{
+        transform: translateY(200px);
+    }
+}
+#left-curve {
+    fill: var(--blue);
+    animation: 10s slideIn2 infinite normal;
+}
+
+#left-curve-bottom {
+    fill: var(--pink);
+    animation: 10s slideIn2 infinite normal;
+}
+
+@keyframes slideIn2 {
+    0% {
+        transform: translateX(-200px);
+    }
+    45% {
+        transform: translateX(-200px);
+    }
+
+    55%{
+        transform:translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* box 3 3 */
+#top-orange {
+    animation: 5s orangeDown infinite normal;
+    animation-delay: .5s;
+}
+
+#blue-circle {
+    animation: 10s rotateCirc1 infinite normal;
+    transform-origin: 25% 75%;
+}
+
+
+@keyframes ornageDown {
+    0% {
+        transform: translate(-200px, -200px);
+    }
+
+    10% {
+        transform: translate(0, 0);
+    }
+    
+    90% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(200px, 200px);
+    }
+}
+
+@keyframes rotateCirc {
+    0% {
+        transform: scaleY(0);
+    }
+
+    5% {
+        transform: scaleY(1);
+    }
+
+    40% {
+        transform: scaleY(1);
+    }
+
+    45% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+}
+
+/* box3 */
+#c1 {
+    animation: 3s big infinite alternate;
+    transform-origin: 50% 50%;
+}
+
+@keyframes big {
+    0% {
+        transform: scale(1.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+
+#c2 {
+    animation: 3s small infinite alternate;
+    transform-origin: 50% 50%;
+}
+
+@keyframes small {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+
+/* box4 */
