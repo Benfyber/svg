@@ -5,11 +5,14 @@
     --dark: #202d34;
 }
 
+body {
+    display: flex;
+}
+
 .wrap {
     height: 200px;
     width: 200px;
-    display: inline-block;
-    margin: 1rem;
+    display: flex;
 }
 
 svg {
@@ -431,6 +434,7 @@ svg {
 #bottom-left5 {
     fill: var(--dark);
     animation: 5s bottomLeftAnimation infinite normal;
+    transform-origin: bottom;
 }
 
 #bottom-right5 {
@@ -591,35 +595,42 @@ svg {
         transform: translateX(0px);
     }
 }
+
 /* box8 */
-#top-left-box7{
+#top-left-box7 {
     fill: var(--dark);
     transform-origin: bottom;
     animation: 10s slideUp infinite normal;
 }
-#center-left{
+
+#center-left {
     fill: var(--pink);
     animation: 10s slideDown infinite normal;
 }
-#bottom-right-box7{
+
+#bottom-right-box7 {
     fill: var(--dark);
     animation: 10s slideUp infinite normal;
     transform-origin: bottom;
 }
-#top-left-box7-2{
+
+#top-left-box7-2 {
     fill: var(--dark);
     transform-origin: bottom;
     animation: 10s slideUp2 infinite normal;
 }
-#center-left-2{
+
+#center-left-2 {
     fill: var(--pink);
     animation: 10s slideDown2 infinite normal;
 }
-#bottom-right-box7-2{
+
+#bottom-right-box7-2 {
     fill: var(--dark);
     transform-origin: bottom;
     animation: 10s slideUp2 infinite normal;
 }
+
 @keyframes slideUp {
     0% {
         transform: translateY(200px);
@@ -632,6 +643,7 @@ svg {
     60% {
         transform: translateY(0px);
     }
+
     75% {
         transform: translateY(200px);
     }
@@ -653,6 +665,7 @@ svg {
     60% {
         transform: translateY(0px);
     }
+
     75% {
         transform: translateY(-200px);
     }
@@ -661,6 +674,7 @@ svg {
         transform: translateY(-200px);
     }
 }
+
 @keyframes slideUp2 {
     0% {
         transform: translateY(200px);
@@ -670,6 +684,7 @@ svg {
     60% {
         transform: translateY(200px);
     }
+
     75% {
         transform: translateY(0px);
     }
@@ -688,6 +703,7 @@ svg {
     60% {
         transform: translateY(-200px);
     }
+
     75% {
         transform: translateY(0px);
     }
